@@ -1,0 +1,201 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+body{
+background:#F3E5AE ;
+padding: 20px;
+}
+
+
+/*CABECERA*/
+header{
+max-width:1302px ;
+min-height:200px ;
+background:white;
+margin: 0 auto;	
+border-radius: 20px 20px 0 0 ;
+
+}
+
+.logo{width:320px ;
+	float: left;
+	margin-top: 22px;
+	margin-left: 20px;
+	animation: 1s entradalogo 1;
+
+}
+
+
+header p{
+	text-align: right;
+	color: black;
+	font-size: 25px;
+	position: relative;
+	top: 50px;
+	left: -40px;
+}
+
+/*CABECERA*/
+
+
+
+/*MENU-HORIZONTAL*/
+#menu-h {
+	max-width: 2050px;
+	min-height: 65px;
+	background-color: black;
+	margin: 0 auto;
+	width: 1303px;
+	
+	}
+
+#menu-h ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+#menu-h a{
+	color: white;
+	display: block;
+	padding: 11px;
+	text-decoration: none;
+	background:black;
+	font-family: arial;
+	font-size: 18px;
+	position: relative;
+	top: 20px;
+
+}
+
+#menu-h a:hover{
+	background:#c0c0c0;
+	}
+
+#menu-h ul ul{
+	display: none;
+	position: absolute;	
+}
+
+#menu-h ul li:hover ul{
+	display: block;
+}
+
+/*MENU-HORIZONTAL*/ 
+
+/*sleder*/
+.slider{
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+}
+
+
+.slider ul{
+	display: flex;
+	animation: cambio 20s infinite;
+	alternate linear;
+	width: 400%;
+}
+
+
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+
+.slider{
+	max-width: 1303px;
+	min-height: 100px;
+	background: #ccc;
+	margin: 0 auto;
+}
+
+.slider img{
+	width: 100%;
+	height: 100%;
+}
+
+.slider li img{
+	width: 1303px;
+	height: 450px;
+}
+
+@keyframes cambio{
+
+	0%{ margin-left: 0%; }
+	20%{ margin-left:0%; }
+
+	25%{ margin-left:-100%;}
+	45%{ margin-left:-100%;}
+
+	50%{ margin-left:-200%;}
+	70%{ margin-left:-200%;}
+
+	75%{ margin-left:-300%;}
+	100%{ margin-left:-300%;}
+}
+/*sleder*/
+
+
+/*CONTENIDO*/
+#contenido{
+	width: 1303px;
+	min-height: 700px;
+	background: #fff;
+	float: right;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+#contenido h2{
+	text-align: center;
+	margin-left: 30px;
+}
+
+#contenido p{
+	margin-bottom: 10px;
+	font-family: arial;
+	font-size: 18px;
+	text-align: justify;
+}
+
+.img-izq{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: 400px;
+
+}
+/*CONTENIDO*/
+
+
+/* PIE-DE-PAGINA */
+footer{
+	max-width: 1303px;
+	background: black;
+	margin: 0 auto;
+	border-radius:0 0 20px 20px ;
+	color: white;
+	text-align: center;
+	padding: 30px;
+	box-sizing: border-box;
+	font-family: arial;
+	font-size: 18px;
+}
+
+
+/* PIE-DE-PAGINA */
+
+
+ 
+/*kEYFRAMES*/
+@keyframes entradalogo{
+	0%{
+		transform: translateY(200px);
+	}
+}
